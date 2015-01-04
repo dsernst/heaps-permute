@@ -24,8 +24,8 @@ var heapsPermute = function (array, output, n) {
 
 
 // For testing:
-var print = function(output){
-  console.log(output);
+var print = function(input){
+  console.log(intput);
 }
 
 heapsPermute(['a', 'b', 'c', 'd'], print);
