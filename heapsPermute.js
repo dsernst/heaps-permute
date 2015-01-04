@@ -5,7 +5,7 @@ var swap = function (array, pos1, pos2) {
 };
 
 var heapsPermute = function (array, output, n) {
-  n = n || array.length;
+  n = n || array.length; // set n default to array.length
   if (n === 1) {
     output(array);
   } else {
@@ -17,7 +17,7 @@ var heapsPermute = function (array, output, n) {
       } else {
         j = i;
       }
-      swap(array, j - 1, n - 1);
+      swap(array, j - 1, n - 1); // -1 to account for javascript zero-indexing
     }
   }
 };
