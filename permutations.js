@@ -5,19 +5,19 @@ var swap = function (array, pos1, pos2) {
 };
 
 var heapsPermute = function (A, output, n) {
-  if (n === undefined) {n = A.length;}
-  if (n === 0) {
+  n = n || A.length;
+  if (n === 1) {
     output(A);
   } else {
-    for (var i = 0; i < n; i += 1) {
+    for (var i = 1; i <= n; i += 1) {
       heapsPermute(A, output, n - 1);
       var j;
-      if ((n + 1) % 2 === 1) {
-        j = 0;
+      if (n % 2) {
+        j = 1;
       } else {
         j = i;
       }
-      swap(A, j, n - 1);
+      swap(A, j - 1, n - 1);
     }
   }
 };
