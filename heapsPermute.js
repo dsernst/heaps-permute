@@ -11,11 +11,10 @@ var heapsPermute = function (array, output, n) {
   } else {
     for (var i = 1; i <= n; i += 1) {
       heapsPermute(array, output, n - 1);
-      var j;
       if (n % 2) {
-        j = 1;
+        var j = 1;
       } else {
-        j = i;
+        var j = i;
       }
       swap(array, j - 1, n - 1); // -1 to account for javascript zero-indexing
     }
