@@ -1,30 +1,25 @@
-var swap = function (arr, pos1, pos2) {
-  var swapped = arr.slice();
-  var temp = swapped[pos1];
-  swapped[pos1] = swapped[pos2];
-  swapped[pos2] = temp;
-  return swapped;
+var swap = function (array, pos1, pos2) {
+  var temp = array[pos1];
+  array[pos1] = array[pos2];
+  array[pos2] = temp;
 };
 
-var heapsPermute = function (A, callback, n) {
-  var i;
-  var j;
-  if (n === undefined) {
-    n = A.length;
-  }
+var heapsPermute = function (A, output, n) {
+  if (n === undefined) {n = A.length;}
   if (n === 0) {
-    callback(A);
+    output(A);
   } else {
-    for (i = 0; i < n; i += 1) {
-      heapsPermute(A, callback, n - 1);
+    for (var i = 0; i < n; i += 1) {
+      heapsPermute(A, output, n - 1);
+      var j;
       if ((n + 1) % 2 === 1) {
         j = 0;
       } else {
         j = i;
       }
-      A = swap(A, j, n - 1);
+      swap(A, j, n - 1);
     }
   }
 };
 
-heapsPermute([1, 2, 3], console.log);
+heapsPermute(['a', 'b', 'c', 'd'], function(output){console.log(output);});
