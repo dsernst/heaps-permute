@@ -2,7 +2,7 @@
   "name": "heaps-permute",
   "version": "1.0.0",
   "description": "A JavaScript implementation of Heap's efficient Permutation Algorithm",
-  "main": "heapsPermute.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
