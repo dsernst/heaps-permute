@@ -7,7 +7,7 @@ function swap(array, pos1, pos2) {
 function heapsPermute(array, callback, n) {
   n = n || array.length; // set n default to array.length
   if (n === 1) {
-    callback(array);
+    callback(array.slice());
   } else {
     var i, j;
     for (i = 1; i <= n; i += 1) {
@@ -23,3 +23,8 @@ function heapsPermute(array, callback, n) {
 }
 
 module.exports = heapsPermute;
+module.exports.all = function (array) {
+  var permutations = [];
+  heapsPermute(array, permutations.push.bind(permutations));
+  return permutations;
+};
