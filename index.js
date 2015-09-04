@@ -22,8 +22,8 @@ function heapsPermute(array, callback, n) {
   }
 }
 
-module.exports = heapsPermute;
-module.exports.all = function (array) {
+module.exports.callback = heapsPermute;
+module.exports = function (array) {
   var permutations = [];
   heapsPermute(array, permutations.push.bind(permutations));
   return permutations;
