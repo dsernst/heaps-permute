@@ -61,7 +61,7 @@ describe('permute() should handle an array of length', function () {
     7: 5,
     8: 50,
     9: 500,
-    10: 5000
+    10: 6000
   };
 
   var _ = require('lodash');

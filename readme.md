@@ -11,7 +11,7 @@ This algorithm is "efficient", but still runs in factorial time. It takes quite 
 - `n = 7` will finish within 5 milliseconds (5040 permutations)
 - `n = 8` will finish within 50 milliseconds (40,320 permutations)
 - `n = 9` will finish within 500 milliseconds (362,880 permutations)
-- `n = 10` will finish within 5000 milliseconds (328,800 permutations)
+- `n = 10` will finish within 6000 milliseconds (328,800 permutations)
 
 ## Install
 
