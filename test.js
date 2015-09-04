@@ -3,7 +3,7 @@
 var permute = require('./index.js');
 var assert = require('assert');
 
-describe('heaps-permute', function () {
+describe('permute(array)', function () {
   it('returns all permutations of an array of items', function () {
     var input = [1, 2, 3];
     var expected = [
@@ -48,8 +48,30 @@ describe('heaps-permute', function () {
     ];
 
     assert.deepEqual(permute(input), expected);
-
   });
-
 });
 
+describe('permute() should handle an array of length', function () {
+
+  var speedLimits = {
+    3: 1,
+    4: 1,
+    5: 1,
+    6: 1,
+    7: 5,
+    8: 50,
+    9: 500,
+    10: 5000
+  };
+
+  var _ = require('lodash');
+
+  _.each(speedLimits, function (limit, n) {
+    var unit = limit === 1 ? ' millisecond' : ' milliseconds';
+
+    it(n + ' within ' + limit + unit, function () {
+      this.timeout(limit);
+      permute(_.range(n));
+    });
+  });
+});
