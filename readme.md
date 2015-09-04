@@ -8,9 +8,10 @@ A JavaScript implementation of [Heap's efficient Permutation Algorithm](https://
 
 This algorithm is "efficient", but still runs in factorial time. It takes quite a while if you run it with an array longer than 10 items. For example:
 
-- `n = 7` took my machine about a second
-- `n = 8` took around 7 seconds
-- `n = 9` took over a minute to compute the [362880 different permutations](https://www.google.com/search?q=9!)
+- `n = 7` will finish within 5 milliseconds (5040 permutations)
+- `n = 8` will finish within 50 milliseconds (40,320 permutations)
+- `n = 9` will finish within 500 milliseconds (362,880 permutations)
+- `n = 10` will finish within 5000 milliseconds (328,800 permutations)
 
 ## Install
 
