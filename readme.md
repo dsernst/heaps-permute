@@ -75,7 +75,7 @@ permute(['a', 'b', 'c', 'd'])
 
 ### permute.callback(array, cb)
 
-This method invokes `cb` each time a unique permutation is found. The callback will be passed just one argument: the new permutation.
+This method invokes `cb` each time a unique permutation is found. The new permutation will be the only argument to the callback.
 
 ```js
 permute.callback([1, 2, 3], console.log);
