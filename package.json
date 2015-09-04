@@ -4,7 +4,7 @@
   "description": "A JavaScript implementation of Heap's efficient Permutation Algorithm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/dsernst/heaps-permute/issues"
   },
-  "homepage": "http://dsernst.com/2014/12/14/heaps-permutation-algorithm-in-javascript/"
+  "homepage": "http://dsernst.com/2014/12/14/heaps-permutation-algorithm-in-javascript/",
+  "devDependencies": {
+    "mocha": "^2.3.0"
+  }
 }
