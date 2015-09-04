@@ -1,6 +1,8 @@
 # heaps-permute
 
 [![NPM Version](https://img.shields.io/npm/v/heaps-permute.svg)](https://www.npmjs.com/package/heaps-permute)
+[![Build Status](https://travis-ci.org/dsernst/heaps-permute.svg?branch=master)](https://travis-ci.org/dsernst/heaps-permute)
+[![Coverage Status](https://coveralls.io/repos/dsernst/heaps-permute/badge.svg?branch=master&service=github)](https://coveralls.io/github/dsernst/heaps-permute?branch=master)
 
 A JavaScript implementation of [Heap's efficient Permutation Algorithm](https://en.wikipedia.org/wiki/Heap%27s_algorithm).
 
