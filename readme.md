@@ -6,7 +6,7 @@
 
 A JavaScript implementation of [Heap's efficient Permutation Algorithm](https://en.wikipedia.org/wiki/Heap%27s_algorithm).
 
-This algorithm is "efficient", but still runs in factorial time. It takes quite a while if you run it with an array longer than 10 items. For example:
+This algorithm is "efficient", but still runs in factorial time. It will probably run out of memory if you try it on an array longer than 10 items. For example:
 
 - `n = 7` will finish within 5 milliseconds (5040 permutations)
 - `n = 8` will finish within 50 milliseconds (40,320 permutations)
