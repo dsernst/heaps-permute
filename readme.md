@@ -1,8 +1,8 @@
 Here's an example:
 
-{% highlight javascript %}
+```js
 heapsPermute([1, 2, 3], function(input){console.log(input);});
-{% endhighlight %}
+```
 
 prints:
 
