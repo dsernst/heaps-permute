@@ -1,6 +1,6 @@
 {
   "name": "heaps-permute",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JavaScript implementation of Heap's efficient Permutation Algorithm",
   "main": "index.js",
   "scripts": {
