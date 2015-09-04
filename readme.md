@@ -1,5 +1,7 @@
 # heaps-permute
 
+[![NPM Version](https://img.shields.io/npm/v/heaps-permute.svg)](https://www.npmjs.com/package/heaps-permute)
+
 A JavaScript implementation of [Heap's efficient Permutation Algorithm](https://en.wikipedia.org/wiki/Heap%27s_algorithm).
 
 This algorithm is "efficient", but still runs in factorial time. It takes quite a while if you run it with an array longer than 10 items. For example:
