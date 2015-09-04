@@ -91,3 +91,18 @@ permute.callback([1, 2, 3], console.log);
 ```
 
 Do not pass this method a third argument: it's needed for an internal counter.
+
+## Tests
+
+To run the test suite, first install the dependencies, then run `npm test`:
+
+```
+$ npm install
+$ npm test
+```
+
+To test code coverage:
+
+```
+$ npm run cover
+```
